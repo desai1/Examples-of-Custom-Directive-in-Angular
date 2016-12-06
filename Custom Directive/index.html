@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header class="container">
+    <h1> My App </h1>
+    <br>
+      </header>
+      
+      <div ng-controller = "Myctrl as Vm"> 
+      <my-directive user="Vm.data" my-tag="{{Vm.message}}" my-result="{{Vm.filteredMessage}}">
+        
+        My First Lesson of Custom Directive
+        
+      </my-directive>
+      
+      </div>
+   
+    <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="myDirective.js"></script>
+    <script src="filter.js"></script>
+    
+    
+  </body>
+
+</html>
+
